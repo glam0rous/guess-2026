@@ -73,13 +73,13 @@
 
       function verificarPalpite(){      
           //---------------------------------------
-          // 1º Verificar se o jogador digitou 
-          // algum número na caixa de texto
+          // 1º Verificar se o jogador digitou
+          //    algum número na caixa de texto
           //---------------------------------------
           let CaixaDeTexto = document.getElementById('TXTPalpite');
-          let chuteDoJogador = CaixaDeTexto;
+          let chuteDoJogador = parseInt(CaixaDeTexto.value);
           
-      
+          console.log(chuteDoJogador);
         }
     
 
