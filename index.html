@@ -71,22 +71,21 @@
 
   <script> 
 
-      function verificarPalpite(){      
-          //---------------------------------------
-          // 1º Verificar se o jogador digitou
-          //    algum número na caixa de texto
-          //---------------------------------------
-          let CaixaDeTexto = document.getElementById('TXTPalpite');
-          let dvMensagem = documents.getElementById('DIVMensagem');
-          
-          let chuteDoJogador = parseInt(CaixaDeTexto.value);
-          
-          if( isNaN(chuteDoJogador) ){
-              dvMensagem.textContent = 'Numero Invalido!!';
-          }else{
-              dvMensagem.textContent = 'Numero Valido: '+chuteDoJogador;
-          }
+      function verificarPalpite(){
+        //-------------------------
+        // 1º Verificas se o jogador digitou
+        //    algum número na caixa de texto
+        //-------------------------
+      let caixaDeTexto = document.getElementById('TXTPalpite');
+      let dvMensagem = document.getElementById('DIVMensagem');
 
+      let chuteDoJogador = parseInt(caixaDeTexto.value);
+      
+      if( isNaN(chuteDoJogador) ){
+        dvMensagem.textContent = 'numero invalido!!';
+      }else{
+        dvMensagem.textContent = 'numero valido: '+chuteDoJogador;
+      }
         }
     
 
