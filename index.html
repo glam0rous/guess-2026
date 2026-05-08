@@ -80,9 +80,10 @@
       let dvMensagem = document.getElementById('DIVMensagem');
 
       let chuteDoJogador = parseInt(caixaDeTexto.value);
-      
-      if( isNaN(chuteDoJogador) ){
-        dvMensagem.textContent = 'numero invalido!!';
+
+      //validaçao do numero digitado. O campo nao pode ser vazio e o numero deve estar entre 1 a 100
+      if( isNaN(chuteDoJogador) || chuteDoJogador < 1 || chuteDoJogador > 100){
+        dvMensagem.textContent = 'Pls, coloque um numero valido entre 1 a 100';
       }else{
         dvMensagem.textContent = 'numero valido: '+chuteDoJogador;
       }
