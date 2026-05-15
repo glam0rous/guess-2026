@@ -71,6 +71,7 @@
 
   <script> 
       let numeroSecreto = Math.floor(Math.random() * 100);
+      let qtdTentativas = 7;
 
       function verificarPalpite(){
         //-------------------------
@@ -95,6 +96,9 @@
         dvMensagem.textContent = 'Errou, vey';
       }    
       
+      console.log(qtdTentativas)
+      qtdTentativas--;
+
     }
     
       function desabilitarJogo(){ 
